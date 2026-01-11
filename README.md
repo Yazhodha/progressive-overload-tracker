@@ -26,7 +26,7 @@ Progressive Overload Tracker is designed to solve a real problem in fitness trac
   - Progress photos with before/after comparisons
   - Visual charts and trend analysis
 
-- **AI-Powered Features** (Powered by Anthropic Claude)
+- **AI-Powered Features** (Powered by DeepSeek AI)
   - Personalized workout routine generation
   - Custom meal plans based on dietary preferences and goals
   - AI workout suggestions based on past performance
@@ -64,7 +64,7 @@ lib/
 - **Local Database**: SQLite with `sqflite` package
 - **State Management**: Riverpod
 - **Charts & Visualization**: fl_chart
-- **AI Integration**: Anthropic Claude API
+- **AI Integration**: DeepSeek API
 - **Version Control**: Git & GitHub
 
 For detailed technology decisions, see [TECH_STACK.md](docs/TECH_STACK.md)
@@ -83,7 +83,7 @@ For detailed technology decisions, see [TECH_STACK.md](docs/TECH_STACK.md)
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/[your-username]/progressive-overload-tracker.git
+git clone https://github.com/Yazhodha/progressive-overload-tracker.git
 cd progressive-overload-tracker
 ```
 
@@ -100,7 +100,7 @@ Create a `.env` file in the root directory:
 ```env
 SUPABASE_URL=your_supabase_project_url
 SUPABASE_ANON_KEY=your_supabase_anon_key
-ANTHROPIC_API_KEY=your_anthropic_api_key
+DEEPSEEK_API_KEY=your_deepseek_api_key
 ```
 
 ### 4. Run the App
@@ -172,7 +172,7 @@ flutter test integration_test/
 - [ ] Social sharing features
 - [ ] App onboarding flow
 
-See [GitHub Issues](https://github.com/[your-username]/progressive-overload-tracker/issues) for detailed progress.
+See [GitHub Issues](https://github.com/Yazhodha/progressive-overload-tracker/issues) for detailed progress.
 
 ## 🤝 Contributing
 
@@ -200,13 +200,13 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 - Flutter team for the amazing framework
 - Supabase for the excellent backend infrastructure
-- Anthropic for Claude AI API
+- DeepSeek for AI API
 - All contributors who help improve this project
 
 ## 📞 Support
 
 If you encounter any issues or have questions:
-- Open an issue on [GitHub Issues](https://github.com/[your-username]/progressive-overload-tracker/issues)
+- Open an issue on [GitHub Issues](https://github.com/Yazhodha/progressive-overload-tracker/issues)
 - Email: yazhodha@live.com
 
 ---
