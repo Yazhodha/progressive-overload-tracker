@@ -1,0 +1,109 @@
+name: progressive_overload_tracker
+description: "A production-grade mobile fitness application for tracking progressive overload, body measurements, and AI-powered workout recommendations."
+publish_to: 'none' # Private package
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.10.7
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # UI & Icons
+  cupertino_icons: ^1.0.8
+  animations: ^2.0.8
+
+  # State Management
+  flutter_riverpod: ^2.4.9
+
+  # Backend & Database
+  supabase_flutter: ^2.0.0
+  sqflite: ^2.3.0
+  path_provider: ^2.1.1
+
+  # Authentication
+  google_sign_in: ^6.1.5
+
+  # Secure Storage
+  flutter_secure_storage: ^9.0.0
+  shared_preferences: ^2.2.2
+
+  # Networking
+  http: ^1.1.0
+
+  # Charts & Visualization
+  fl_chart: ^0.65.0
+
+  # Media & Images
+  image_picker: ^1.0.5
+  flutter_image_compress: ^2.1.0
+
+  # Background Tasks
+  workmanager: ^0.5.1
+
+  # Date/Time & Localization
+  intl: ^0.18.1
+
+  # Utilities
+  url_launcher: ^6.2.1
+  device_info_plus: ^9.1.1
+  connectivity_plus: ^5.0.2
+
+  # Environment Variables
+  flutter_dotenv: ^5.1.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  integration_test:
+    sdk: flutter
+
+  flutter_lints: ^6.0.0
+  mockito: ^5.4.4
+  build_runner: ^2.4.6
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter packages.
+flutter:
+
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
+  # Assets
+  assets:
+    - assets/images/
+    - assets/icons/
+    - .env
+
+  # An image asset can refer to one or more resolution-specific "variants", see
+  # https://flutter.dev/to/resolution-aware-images
+
+  # For details regarding adding assets from package dependencies, see
+  # https://flutter.dev/to/asset-from-package
+
+  # To add custom fonts to your application, add a fonts section here,
+  # in this "flutter" section. Each entry in this list should have a
+  # "family" key with the font family name, and a "fonts" key with a
+  # list giving the asset and other descriptors for the font. For
+  # example:
+  # fonts:
+  #   - family: Schyler
+  #     fonts:
+  #       - asset: fonts/Schyler-Regular.ttf
+  #       - asset: fonts/Schyler-Italic.ttf
+  #         style: italic
+  #   - family: Trajan Pro
+  #     fonts:
+  #       - asset: fonts/TrajanPro.ttf
+  #       - asset: fonts/TrajanPro_Bold.ttf
+  #         weight: 700
+  #
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.dev/to/font-from-package
