@@ -10,8 +10,8 @@
 
 **Active Milestone**: Foundation (MVP) - Auth Phase
 **Current Sprint**: Supabase & Auth Setup (Sprint 2)
-**Overall Progress**: 55% (Authentication Infrastructure Complete)
-**Current Blocker**: None - Ready for Supabase Integration
+**Overall Progress**: 60% (Authentication Verified on Device)
+**Current Blocker**: None
 
 ### Quick Links
 - **GitHub Repository**: https://github.com/Yazhodha/progressive-overload-tracker
@@ -373,6 +373,36 @@
 
 ---
 
+### Session 4 - February 15, 2026
+
+**Focus**: Supabase integration, Google OAuth fix, on-device testing
+
+#### ✅ Completed Tasks
+
+1. **Supabase Project Restored**
+   - [x] Diagnosed paused Supabase project via CLI/API
+   - [x] Restored project to ACTIVE_HEALTHY status
+
+2. **Google Sign-In Bug Fixes**
+   - [x] Fixed `serverClientId` mismatch in `AuthRepositoryImpl` — was using wrong Google OAuth client ID, causing Supabase token validation to fail silently
+   - [x] Fixed SplashScreen hijacking navigation — it used `Navigator.pushReplacement` independently of `AuthWrapper`, so state-driven rebuilds after sign-in were hidden underneath the pushed route
+
+3. **On-Device Testing (iPhone)**
+   - [x] Built and deployed to physical iPhone (iOS 26.2.1)
+   - [x] Verified Google Sign-In → Supabase auth → HomeScreen flow
+   - [x] Verified sign-out → sign-in cycle works correctly
+
+4. **Project Configuration**
+   - [x] Added CLAUDE.md with project conventions
+
+#### 💭 Session End Notes
+
+- **Session Status**: ✅ COMPLETE
+- **Sprint 2 Status**: 95% Complete (real auth working on device)
+- **App State**: Google Sign-In working with Supabase on physical device
+
+---
+
 ## 📊 Milestone Progress
 
 ### Milestone 1: Foundation (MVP) - 55% Complete
@@ -389,12 +419,12 @@
 - [x] Dependency configuration (150 packages)
 - [ ] GitHub issues and milestones (deferred to Sprint 2)
 
-#### Sprint 2: Supabase & Auth Setup (In Progress - 80%)
-- [ ] Supabase project creation (pending - need credentials)
-- [ ] Database schema implementation (pending - need Supabase)
-- [ ] Google OAuth 2.0 configuration (pending - need Google Cloud Console)
-- [x] Google Sign-In integration in Flutter (mock + real ready)
-- [x] Authentication flow implementation (complete with mock auth)
+#### Sprint 2: Supabase & Auth Setup (In Progress - 95%)
+- [x] Supabase project creation and configuration
+- [ ] Database schema implementation (pending)
+- [x] Google OAuth 2.0 configuration
+- [x] Google Sign-In integration in Flutter (verified on device)
+- [x] Authentication flow implementation (sign-in/sign-out verified)
 - [x] Secure token storage (configured)
 - [x] Core constants and configuration
 - [x] Theme system with light/dark modes
@@ -594,8 +624,8 @@
 
 ---
 
-**Last Updated**: 2026-01-31 (Session 3 - COMPLETE)
-**Next Update**: Session 4 (Supabase integration + User Profile)
+**Last Updated**: 2026-02-15 (Session 4 - COMPLETE)
+**Next Update**: Session 5 (Database schema + User Profile)
 
 ---
 
