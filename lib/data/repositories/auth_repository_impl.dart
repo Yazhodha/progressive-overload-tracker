@@ -19,7 +19,7 @@ class AuthRepositoryImpl implements AuthRepository {
   bool _useMockAuth = false;
 
   // Web client ID for Supabase to validate the ID token
-  static const String _webClientId = '457441650323-5mr72svsgd5bmnhfro12pnggjvio8tcn.apps.googleusercontent.com';
+  static const String _webClientId = '457441650323-p5gg1kv5r61pdjjct09b6l8t373m4lpu.apps.googleusercontent.com';
 
   AuthRepositoryImpl({GoogleSignIn? googleSignIn})
       : _googleSignIn = googleSignIn ?? GoogleSignIn(
